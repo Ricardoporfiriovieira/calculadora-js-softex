@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Softex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    
+    
+
+    <div class="big-container">
+        <div class="calc-container">
+            <h2>Calculadora JavaScript</h2>
+            <div class="inputBox">
+                <input type="number" placeholder="ex: 123" name="num1" id="num1">
+                <span>1º Número</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="ex: 123" name="num1" id="num2">
+                <span>2º Número</span>
+                <i></i>
+            </div>
+        
+            <div class="operacoes">
+                <div class="soma">
+                    <input type="radio" name="op" id="op1" value="1" checked>
+                    <label for="">Soma</label>
+                </div>
+                <div class="sub">
+                    <input type="radio" name="op" id="op2" value="2" >
+                    <label for="">Sub</label>
+                </div>
+                <div class="mult">
+                    <input type="radio" name="op" id="op3" value="3"  >
+                    <label for="">Mult</label>
+                </div>
+                <div class="div">
+                    <input type="radio" name="op" id="op4" value="4" >
+                    <label for="">Div</label>
+                </div>
+            </div>
+        
+            <input type="submit" value="Calcular" onclick="calcular()" class="butao">
+
+            <label class="mostraresul" for="">Resultado:</label>
+            <div id="resultado"></div>
+            <div id="resto"></div>
+        </div>
+
+    </div>
+
+    <h3><a href="https://github.com/Ricardoporfiriovieira/calculadora-softex-curso" target="_blank">Acesse meu Github:</a> <a href="https://github.com/Ricardoporfiriovieira/calculadora-softex-curso" target="_blank"><img src="./img/25231.png" alt=""></a> </h3>
+
+    <script src="calculo.js"></script>
+
+
+</body>
+</html>
